@@ -1,0 +1,80 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_out_of_scope
+
+
+- rule: Answer requirement_voting_absentee_ballot
+  steps:
+  - intent: requirement_voting_absentee_ballot
+  - action: utter_requirement_voting_absentee_ballot
+    
+- rule: Answer voter_registration_deadline
+  steps:
+  - intent: voter_registration_deadline
+  - action: utter_voter_registration_deadline
+    
+- rule: Answer cast_vote
+  steps:
+  - intent: cast_vote
+  - action: utter_cast_vote
+    
+- rule: Answer registration_qualification_vote
+  steps:
+  - intent: registration_qualification_vote
+  - action: utter_registration_qualification_vote
+    
+- rule: Answer register_mail_vote
+  steps:
+  - intent: register_mail_vote
+  - action: utter_register_mail_vote
+    
+- rule: Answer register_person_vote
+  steps:
+  - intent: register_person_vote
+  - action: utter_register_person_vote
+    
+- rule: Answer vote_photo_id
+  steps:
+  - intent: vote_photo_id
+  - action: utter_vote_photo_id
+    
+- rule: Answer voting_right
+  steps:
+  - intent: voting_right
+  - action: utter_voting_right
+    
+- rule: Answer check_registered_vote
+  steps:
+  - intent: check_registered_vote
+  - action: utter_check_registered_vote
+    
+- rule: Answer update_address
+  steps:
+  - intent: update_address
+  - action: utter_update_address
+    
+- rule: Answer get_absentee_ballot_overseas
+  steps:
+  - intent: get_absentee_ballot_overseas
+  - action: utter_get_absentee_ballot_overseas
+    
+- rule: Answer elected_official
+  steps:
+  - intent: elected_official
+  - action: utter_elected_official
+    

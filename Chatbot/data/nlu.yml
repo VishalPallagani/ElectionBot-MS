@@ -1,0 +1,141 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: requirement_voting_absentee_ballot
+  examples: |
+    - What are the requirements for voting by absentee ballot?
+    
+- intent: voter_registration_deadline
+  examples: |
+    - What is the voter registration deadline?
+    
+- intent: cast_vote
+  examples: |
+    - Where can I cast my vote?
+    
+- intent: registration_qualification_vote
+  examples: |
+    - What are the registration qualifications to vote?
+    
+- intent: register_mail_vote
+  examples: |
+    - How to register by mail to vote?
+    
+- intent: register_person_vote
+  examples: |
+    - How to register in person to vote?
+    
+- intent: vote_photo_id
+  examples: |
+    - How to vote with a Photo ID?
+    
+- intent: voting_right
+  examples: |
+    - What are my voting rights?
+    
+- intent: check_registered_vote
+  examples: |
+    - How to check if I am registered to vote?
+    
+- intent: update_address
+  examples: |
+    - How to update my address?
+    
+- intent: get_absentee_ballot_overseas
+  examples: |
+    - How do I get an absentee ballot if I am overseas or serving in the military outside my home state?
+    
+- intent: elected_official
+  examples: |
+    - Who are my elected officials?
+    
